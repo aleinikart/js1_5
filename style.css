@@ -1,5 +1,8 @@
+
 .line {
+    
     float: left;
+    width: 100%;
 }
 
 .cell {
