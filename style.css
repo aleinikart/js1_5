@@ -1,0 +1,111 @@
+.line {
+    float: left;
+}
+
+.cell {
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000;
+}
+
+.cell .mark {
+    display: block;
+    text-transform: uppercase;
+}
+
+.cell.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.cell.black.field {
+    color: #000;
+}
+
+.cell.slim {
+    width: 20px;
+}
+
+.cell.short {
+    line-height: 20px;
+    height: 20px;
+}
+
+.cell.bottom .mark {
+    transform: rotate(180deg);
+}
+
+.cell.left .mark {
+    transform: rotate(90deg);
+}
+
+.cell.right .mark {
+    transform: rotate(-90deg);
+}
+
+.unit {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.unit:after {
+    font-size: 35px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    text-align: center;
+    text-shadow: 0 0px 20px #fff, 0 0px 20px #fff, 0 0px 20px #fff, 0 0px 20px #fff, 0 0px 20px #fff, 0 0px 20px #fff;
+}
+
+
+.unit.king.bl:after{
+    content: '♚';
+}
+.unit.king.wh:after{
+    content: '♔';
+}
+
+.unit.queen.bl:after{
+    content: '♛';
+}
+.unit.queen.wh:after{
+    content: '♕';
+}
+.unit.bishop.bl:after{
+    content: '♝';
+}
+.unit.bishop.wh:after{
+    content: '♗';
+}
+.unit.horse.bl:after{
+    content: '♞';
+}
+.unit.horse.wh:after{
+    content: '♘';
+}
+.unit.rock.bl:after{
+    content: '♜';
+}
+.unit.rock.wh:after{
+    content: '♖';
+}
+.unit.pawn.bl:after{
+    content: '♟';
+}
+.unit.pawn.wh:after{
+    content: '♙';
+}
